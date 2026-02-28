@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result System</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Result System</h1>
+    
+    <div class="input-group">
+      <label for="name">Student Name:</label>
+      <input type="text" id="name" placeholder="Enter student name">
+    </div>
+
+    <div class="input-group">
+      <label for="marks">Marks (out of 100):</label>
+      <input type="number" id="marks" min="0" max="100" placeholder="Enter marks">
+    </div>
+
+    <div class="input-group">
+      <label for="attendance">Attendance Percentage:</label>
+      <input type="number" id="attendance" min="0" max="100" placeholder="Enter attendance %">
+    </div>
+
+    <button onclick="calculateResult()">Calculate Result</button>
+
+    <div class="result" id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
