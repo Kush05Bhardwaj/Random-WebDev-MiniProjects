@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Map Function</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Custom Map Function</h1>
+    
+    <div class="input-group">
+      <label for="arrayInput">Enter Array (comma separated):</label>
+      <input type="text" id="arrayInput" placeholder="e.g., 1, 2, 3, 4, 5">
+    </div>
+
+    <div class="input-group">
+      <label for="operation">Select Operation:</label>
+      <select id="operation">
+        <option value="double">Double (x * 2)</option>
+        <option value="square">Square (x * x)</option>
+        <option value="addTen">Add 10 (x + 10)</option>
+        <option value="half">Half (x / 2)</option>
+      </select>
+    </div>
+
+    <button onclick="applyCustomMap()">Apply Custom Map</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
