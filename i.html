@@ -1,0 +1,295 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>My Details</title>
+</head>
+<body>
+<h2>Check Console</h2>
+<script>
+    let name = "Kushagra Bhardwaj"; let course = "B.Tech";
+    let university = "K.R Mangalam University"; let city = "Gurugram";
+    console.log("Name: " + name); console.log("Course: " + course); console.log("University: " + university); console.log("City: " + city);
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Area of Rectangle</title>
+</head>
+<body>
+<h2>Area of Rectangle</h2>
+<p id="result"></p>
+<script>
+    let length = 8; let breadth = 4;
+    let area = length * breadth;
+    document.getElementById("result").innerText = "Length: " + length + "\n" +
+    "Breadth: " + breadth + "\n" + "Area: " + area;
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Data Types with Popup</title>
+</head>
+<body>
+<script>
+    let name = "Kushagra Bhardwaj"; 
+    let age = 20;
+    let isGraduate = false; 
+    alert(
+        "Name: " + name +
+        "\nType of Name: " + typeof name + 
+        "\n\nAge: " + age +
+        "\nType of Age: " + typeof age + 
+        "\n\nIs Graduate: " + isGraduate +
+        "\nType of isGraduate: " + typeof isGraduate
+    );
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Even or Odd</title>
+</head>
+<body>
+<h2>Even or Odd Program</h2>
+<script>
+    let number = 98;
+    if (number % 2 == 0) {
+    document.write(number + " is Even");
+    } else {
+    document.write(number + " is Odd");
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Largest Number</title>
+</head>
+<body>
+<h2 id="heading">Click the button to find the largest number</h2>
+<button id="btn" onclick="findLargest()">Find Largest</button>
+<p id="result"></p>
+<script>
+    function findLargest() {
+    document.getElementById("heading").innerText = "Largest Number"; 
+    let a = 90; let b = 22; let c = 5; let largest;
+        if (a >= b && a >= c) { largest = a;
+        }
+        else if (b >= a && b >= c) { largest = b;
+        }
+        else {
+        largest = c;
+        }
+    document.getElementById("result").innerText = "Largest number is: " + largest;
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Reverse Number</title>
+</head>
+<body>
+<script>
+    function reverseNumber(num) { let reverse = 0;
+        while (num > 0) {
+        let digit = num % 10;
+        reverse = reverse * 10 + digit; num = Math.floor(num / 10);
+        }
+    return reverse;
+    }
+    let result = reverseNumber(5638);
+    document.write("Reversed number is: " + result);
+</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Remove Duplicates</title>
+</head>
+<body>
+<h2>Remove Duplicate Elements</h2>
+<p id="output"></p>
+<button onclick="removeDuplicates()">Remove Duplicates</button>
+<script>
+function removeDuplicates() { let arr = [1, 2, 4, 3, 2, 2, 5];
+let unique = [];
+for (let i = 0; i < arr.length; i++) { let isDuplicate = false;
+for (let j = 0; j < unique.length; j++) { if (arr[i] === unique[j]) {
+isDuplicate = true; break;
+}
+}
+if (!isDuplicate) {
+unique.push(arr[i]);
+}
+}
+document.getElementById("output").innerText = "Original Array: " + arr + "\n" +
+"Array without duplicates: " + unique;
+}
+</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Anagram Checker</title>
+</head>
+<body>
+<h2>Check Anagram</h2>
+<label>Enter First String:</label>
+<input type="text" id="str1"><br><br>
+<label>Enter Second String:</label>
+<input type="text" id="str2"><br><br>
+<button onclick="checkAnagram()">Check</button>
+<p id="result"></p>
+<script>
+    function checkAnagram() {
+    let str1 = document.getElementById("str1").value; let str2 = document.getElementById("str2").value;
+    str1 = str1.toLowerCase().replace(/\s/g, ""); str2 = str2.toLowerCase().replace(/\s/g, "");
+        if (str1.length !== str2.length) {
+        document.getElementById("result").innerText = "Not Anagrams";
+    return;
+    }
+    let sorted1 = str1.split("").sort().join("");
+    let sorted2 = str2.split("").sort().join("");
+        if (sorted1 === sorted2) {
+        document.getElementById("result").innerText = "They are Anagrams ";
+        } else {
+        document.getElementById("result").innerText = "They are NOT Anagrams ";
+        }
+}
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Custom Map Function</title>
+</head>
+<body>
+<h2>Custom Version of array.map()</h2>
+<p id="output"></p>
+<button onclick="runCustomMap()">Run Custom Map</button>
+<script>
+    function myMap(arr, callback) { let result = [];
+    for (let i = 0; i < arr.length; i++) { result.push(callback(arr[i], i, arr));
+    }
+    return result;
+    }
+    function runCustomMap() { let numbers = [1, 2, 3, 4, 5];
+    let newArray = myMap(numbers, function(value) {
+    return value * 2;
+    });
+    document.getElementById("output").innerText = "Original Array: " + numbers + "\n" +
+    "After Custom Map (x2): " + newArray;
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Longest Substring Without Repeating Characters</title>
+</head>
+<body>
+<h2>Longest Substring Without Repeating Characters</h2>
+<p id="result"></p>
+<button onclick="findLongest()">Find Length</button>
+<script>
+    function longestSubstringLength(str) { let maxLength = 0;
+    let currentSubstring = "";
+    for (let i = 0; i < str.length; i++) {
+    let index = currentSubstring.indexOf(str[i]);
+    if (index !== -1) {
+    currentSubstring = currentSubstring.slice(index + 1);
+    }
+    currentSubstring += str[i];
+    if (currentSubstring.length > maxLength) { maxLength = currentSubstring.length;
+    }
+    }
+    return maxLength;
+    }
+    function findLongest() { let text = "abcabcbb";
+    let length = longestSubstringLength(text);
+    document.getElementById("result").innerText = "String: " + text + "\n" +
+    "Length of longest substring without repeating characters: " + length;
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Flatten Nested Array</title>
+</head>
+<body>
+<h2>Flatten Nested Array Using Recursion</h2>
+<p id="result"></p>
+<button onclick="runFlatten()">Flatten Array</button>
+<script>
+    function flattenArray(arr) { let result = [];
+    for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+    let flatPart = flattenArray(arr[i]);
+    for (let j = 0; j < flatPart.length; j++) { result.push(flatPart[j]);
+    }
+    } else {
+    result.push(arr[i]);
+    }
+    }
+    return result;
+    }
+    function runFlatten() {
+    let nestedArray = [1, [2, [3, 4], 5], [6, [7, [8]]]];
+    let flatArray = flattenArray(nestedArray);
+    document.getElementById("result").innerText = "Original Array: " + JSON.stringify(nestedArray) + "\n" + "Flattened Array: " + flatArray;
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Custom Debounce Function</title>
+</head>
+<body>
+<h2>Debounce Example</h2>
+<input type="text" id="search" placeholder="Type something...">
+<p id="result"></p>
+<script>
+    function debounce(func, delay) { let timer;
+    return function() { clearTimeout(timer);
+    timer = setTimeout(() => { func();
+    }, delay);
+    };
+    }
+    function showMessage() {
+    let value = document.getElementById("search").value;
+    document.getElementById("result").innerText = "You typed: " + value;
+    }
+    let debouncedFunction = debounce(showMessage, 1000); document.getElementById("search")
+    .addEventListener("keyup", debouncedFunction);
+</script>
+</body>
+</html> -->
