@@ -1,0 +1,37 @@
+<!--
+Project: Interactive Quiz
+Name: Kush05Bhardwaj
+Date: 2026-04-01
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Interactive Quiz</h1>
+    <p>Test your knowledge with this simple quiz!</p>
+</header>
+
+<section id="quiz-box">
+    <h2 id="question">Question will appear here</h2>
+
+    <div id="options"></div>
+
+    <button id="nextBtn">Next</button>
+</section>
+
+<section id="result" class="hidden">
+    <h2 id="scoreText"></h2>
+    <p id="message"></p>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>-</title>
+</head>
+<body>
+
+<script>
+console.log("Kushagra 2401010029");
+let students = [
+{ name: "Kush", test1: 50, test2: 80 },
+{ name: "Deepak", test1: 60, test2: 70 },
+{ name: "Sahdev", test1: 40, test2: 90 }
+];
+let maxImprovement = -Infinity;
+let studentName = "";
+students.forEach(s => {
+let improvement = s.test2 - s.test1;
+if (improvement > maxImprovement) {
+maxImprovement = improvement;
+studentName = s.name;
+}
+});
+console.log(studentName, maxImprovement);
+
+</script>
+
+</body>
+</html>

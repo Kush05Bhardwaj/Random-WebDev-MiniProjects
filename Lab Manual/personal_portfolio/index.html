@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Project Title: Personal Portfolio -->
+  <!-- Name: Kushagra Bhardwaj -->
+  <!-- Roll Number: 2401010029 -->
+
+  <header id="top" class="site-header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="tagline">Aspiring Web Developer | Building clean and user-friendly websites</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="welcome" class="section welcome-section">
+      <div class="container">
+        <h2>Welcome</h2>
+        <p>Welcome to my personal portfolio homepage. Explore my skills, projects, and contact details below.</p>
+        <button id="thankYouBtn" type="button">Click for Greeting</button>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a beginner front-end developer passionate about creating responsive and accessible web pages
+          using modern HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Student Result Dashboard</h3>
+            <p>A simple interface to display and filter student marks using JavaScript DOM manipulation.</p>
+          </article>
+          <article class="project-card">
+            <h3>Responsive Landing Page</h3>
+            <p>A mobile-friendly product landing page designed with Flexbox and semantic HTML structure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Information</h2>
+        <p>Email: yourname@example.com</p>
+        <p>Phone: +91-9876543210</p>
+
+        <h3>Contact Form</h3>
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+        <p id="formFeedback" class="feedback" aria-live="polite"></p>
+
+        <button id="scrollTopBtn" type="button">Back to Top</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

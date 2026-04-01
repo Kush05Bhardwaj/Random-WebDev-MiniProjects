@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    background: #e3e3e3;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.testimonial {
+    background: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #333;
+}
+
+form {
+    text-align: center;
+}
+
+input, textarea {
+    width: 80%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
