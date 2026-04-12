@@ -1,0 +1,44 @@
+<!--
+Project Title: E-Commerce Website (Frontend)
+Name: [Your Name]
+Date: [Submission Date]
+Description: Simple e-commerce website with cart functionality using HTML, CSS, JS
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛒 My E-Commerce Store</h1>
+    <button onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<!-- PRODUCTS -->
+<section id="products"></section>
+
+<!-- CART -->
+<div id="cart" class="hidden">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button onclick="showCheckout()">Checkout</button>
+</div>
+
+<!-- CHECKOUT -->
+<div id="checkout" class="hidden">
+    <h2>Checkout</h2>
+    <input type="text" id="name" placeholder="Your Name"><br>
+    <textarea id="address" placeholder="Your Address"></textarea><br>
+    <button onclick="placeOrder()">Place Order</button>
+    <p id="confirmation"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
